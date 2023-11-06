@@ -2,6 +2,7 @@
 import './App.css'
 import SkillList from './SkillList'
 import HorizontalRule from './hr'
+import NewSkillForm from './NewSkillForm'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -11,6 +12,7 @@ function App() {
       <h1>React Dev Skills</h1>
       <SkillList />
       <HorizontalRule />
+      <NewSkillForm />
     </>
   )
 }

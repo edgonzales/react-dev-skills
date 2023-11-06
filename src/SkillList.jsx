@@ -1,4 +1,4 @@
-import SkilListItem from "./ToDoListItem";
+import SkilListItem from "./SkillListItem";
 
 export default function SkillList() {
     // Application logic, etc. goes here
