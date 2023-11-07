@@ -1,5 +1,3 @@
-import "./SkillsListItem.css"
-
 export default function SkillListItem({skill}) {
     // Application logic, etc. goes here
     return (
