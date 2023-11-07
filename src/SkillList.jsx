@@ -1,5 +1,6 @@
 import SkillListItem from "./SkillListItem";
 
+
 function SkillList(props) {
     // Application logic, etc. goes here
    console.log(props); 
