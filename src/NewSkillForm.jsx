@@ -47,10 +47,7 @@ export default function NewSkillForm(props) {
                 <option value={4}>4</option>
                 <option value={5}>5</option>
             </select>
-            <button type="submit"
-            >
-                ADD SKILL
-            </button>
+            <button type="submit">ADD SKILL</button>
         </form>
     )
 }
