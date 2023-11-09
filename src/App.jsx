@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import './App.css'
 import SkillList from './SkillList'
-import HorizontalRule from './hr'
 import NewSkillForm from './NewSkillForm'
 
 
@@ -15,15 +14,22 @@ export default function App() {
     { name: "Python", level: 2 },
   ];
 
-  const [skill, setSkill] = useState(initialSkills);
+  const [skills, setSkills] = useState(initialSkills);
+  console.log(skills);
+
+
+  function addSkill(skill) {
+     const updatedSkills = [...skills, skill];
+     setSkills(updatedSkills);
+  }
 
   return (
     <div className='App padding-0' >
       <h1 className='teal-text'>React Dev Skills</h1>
       {/* <SkillList /> */}
-      <SkillList skills={skill} />
-      <HorizontalRule />
-      <NewSkillForm />
+      <SkillList skills={skills} />
+      <hr />
+      <NewSkillForm addSkill={addSkill} />
     </div>
   )
 }

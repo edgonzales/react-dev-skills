@@ -1,13 +1,13 @@
 import SkillListItem from "./SkillListItem";
 
 
-function SkillList(props) {
+function SkillList({skills}) {
     // Application logic, etc. goes here
-   console.log(props); 
-    const skillListItems = props.skills.map((s, idx) => <SkillListItem skill={s} key={idx} />);
-    console.log(skillListItems)
+    //console.log(props); 
+    const skillListItems = skills.map((s, idx) => <SkillListItem skill={s} key={idx} />);
+    console.log(skillListItems);
     return (
-        <ul>
+        <ul className="padding-0">
             {skillListItems}
         </ul>
     );
